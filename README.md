@@ -51,10 +51,10 @@ Intel Realsense Tracking and Depth camera simulations and URDF macros.
 ![](doc/d435.png)
 
 ### Usage ###
-* 启动sdf simulation
-roslaunch realsense_ros_gazebo simulation_sdf.launch
-* 启动xacro simulation
-roslaunch realsense_ros_gazebo simulation.launch
+* 启动sdf simulation  
+`roslaunch realsense_ros_gazebo simulation_sdf.launch`
+* 启动xacro simulation  
+`roslaunch realsense_ros_gazebo simulation.launch`
 
 #### xacro
 ```xml
