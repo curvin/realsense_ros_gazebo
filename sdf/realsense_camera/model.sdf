@@ -210,7 +210,7 @@
     </link>
 
     <plugin name="camera_plugin" filename="librealsense_gazebo_plugin.so">
-       <prefix>realsense_camera</prefix>
+       <!--prefix>realsense_camera</prefix-->
        <depthTopicName>depth/image_raw</depthTopicName>
        <depthCameraInfoTopicName>depth/camera_info</depthCameraInfoTopicName>
        <colorTopicName>color/image_raw</colorTopicName>
