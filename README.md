@@ -51,7 +51,12 @@ Intel Realsense Tracking and Depth camera simulations and URDF macros.
 ![](doc/d435.png)
 
 ### Usage ###
+* 启动sdf simulation
+roslaunch realsense_ros_gazebo simulation_sdf.launch
+* 启动xacro simulation
+roslaunch realsense_ros_gazebo simulation.launch
 
+#### xacro
 ```xml
 <xacro:include filename="$(find realsense_ros_gazebo)/xacro/depthcam.xacro"/>
 
@@ -59,6 +64,28 @@ Intel Realsense Tracking and Depth camera simulations and URDF macros.
   <origin rpy="0 0 0 " xyz="0 0 0.5"/>
 </xacro:realsense_d435>
 ```
+
+#### sdf
+```
+    <include>
+      <uri>model://realsense_camera</uri>
+      <pose>0.12 0 0.02 1.57 0 1.57</pose>
+    </include>
+
+    <joint name="realsense_camera_joint" type="fixed">
+      <child>realsense_camera::camera_link</child>
+      <parent>iris::base_link</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+
+```
+其中的iris根据自己的robot model name一致
 
 ### Publishers ###
 
