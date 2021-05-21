@@ -370,9 +370,9 @@
     </joint>
 
     <plugin name="camera" filename="librealsense_gazebo_plugin.so">
-       <depthUpdateRate>${rate}</depthUpdateRate>
-       <colorUpdateRate>${rate}</colorUpdateRate>
-       <infraredUpdateRate>${rate}</infraredUpdateRate>
+       <depthUpdateRate>30</depthUpdateRate>
+       <colorUpdateRate>30</colorUpdateRate>
+       <infraredUpdateRate>30</infraredUpdateRate>
        <depthTopicName>depth/image_raw</depthTopicName>
        <depthCameraInfoTopicName>depth/camera_info</depthCameraInfoTopicName>
        <colorTopicName>color/image_raw</colorTopicName>
