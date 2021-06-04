@@ -1,6 +1,6 @@
 # Intel RealSense Gazebo/ROS
-Intel Realsense Tracking and Depth camera simulations and URDF macros.
-
+Intel Realsense Tracking and Depth camera simulations and URDF&SDF macros.
+T265 & D435i
 
 
 ## RealSense T265 ##
@@ -25,8 +25,6 @@ Intel Realsense Tracking and Depth camera simulations and URDF macros.
 
 
 ## RealSense R200 ##
-
-![](doc/r200.png)
 
 ### Usage ###
 ```xml
